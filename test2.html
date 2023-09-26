@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+        <title>test2</title>
+        <link href="css/common.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/reset.css" rel="stylesheet">
+
+    </head>
+
+    <script>
+    function slide(){
+    $("#slider-image-wrap").stop().animate({ marginLeft:-1900 }, 1000, function () {
+           $(".image").eq(0).appendTo("#slider-image-wrap");
+           $("#slider-image-wrap").css({ marginLeft: 0 });
+
+    });           
+}
+
+
+   $(document).ready(slide)
+
+   $(slide())
+
+
+
+
+
+   $(document).ready(function(){
+    slide()
+   })
+
+   $(function(){slide()})
+
+
+
+
+    </script>
+
+    <body>
+        <div id="slider">
+            <div id="slider-image-wrap">
+                <img src="img/slide1.jpg" alt="slider" class="image">
+                <img src="img/slide2.jpg" alt="slider" class="image">
+                <img src="img/slide3.jpg" alt="slider" class="image">
+                <img src="img/slide4.jpg" alt="slider" class="image">
+            </div>
+        </div>
+
+        <
+
+    </body>
+</html>

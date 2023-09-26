@@ -1,0 +1,277 @@
+@charset "utf-8";
+
+/*Section start*/
+
+section {
+    width: 1230px;
+    height: 970px;
+    margin: 0 auto;
+}
+
+section > #imgbox {
+    width: 665px;
+    height: 705px;
+    float: left;
+}
+
+section > #imgbox > .little-image {
+    width: 90px;
+    height: 90px;
+    margin: 90px 0 0;
+    float: left;
+}
+
+section > #imgbox > .big-image {
+    width: 530px;
+    height: 530px;
+    margin: 90px 0 0;
+    float: left;
+}
+
+section > #textbox {
+    width: 565px;
+    height: 735px;
+    float: left;
+    /* background-color: beige; */
+}
+
+.bar {
+    display: inline-block;
+    width: 60px;
+    height: 10px;
+    /* background-color: aqua; */
+}
+
+section > #textbox > .head {
+    margin: 90px 0 0;
+    border-bottom: 1px solid black;
+}
+section > #textbox > .head > dt {
+    margin: 0 0 30px;
+}
+
+section > #textbox > .head > dt > h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+section > #textbox > .head > dt > h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+section > #textbox > .head > dt > h4:after {
+    content: "8,890원";
+    font-size: 16px;
+    color: rgb(136,136,136);
+    text-decoration: line-through;
+    font-weight: normal;
+    margin-left:30px;
+
+}
+section > #textbox > .body {
+    /* background-color: tomato; */
+    height: 50px;
+}
+
+#textbox > dl:nth-child(2){
+    margin-top: 20px;
+}
+section > #textbox > .body > dt {
+    float: left;
+    margin-right: 70px;
+    width: 70px;
+    font-size: 14px;
+    height: 20px;
+    /* background-color: aqua; */
+}
+section > #textbox > .body > dd {
+    /* background-color: gold; */
+    color: #666;
+
+}
+
+
+section > #textbox > .quantity-box {
+    width: 565px;
+    height: 110px;
+    /* background-color: aquamarine; */
+    border-radius: 20px;
+    border: 1px solid rgb(211,211,211)
+}
+section > #textbox > .quantity-box > h3 {
+    padding: 25px 0 0 30px;
+    font-size: 17px;
+}
+section > #textbox > .quantity-box > h3:after {
+    content: "쿠폰적용";
+    background-color: black;
+    color: white;
+    margin-left: 5px;
+    font-size: 13px;
+}
+section > #textbox > .quantity-box > h4 {
+    float: right;
+    margin-right: 32px;
+}
+
+section > #textbox > #total-product {
+    width: 565px;
+    height: 70px;
+    border-bottom: 1px solid #666;
+    background-color: white;
+
+}
+section > #textbox > #total-product > dt {
+    float: left;
+    margin-right: 370px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+section > #textbox > #total-product > dd {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-weight: bold;
+    color: #666;
+    font-size: 14px;
+}
+
+section > #textbox > #total-price {
+    width: 565px;
+    height: 75px;
+    /* background-color: darkcyan; */
+}
+
+section > #textbox > #total-price > dt {
+    float: left;
+    margin-right: 370px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+section > #textbox > #total-price > dd {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+section > #textbox > .button-box > .button-add-wish {
+    background:url("../img/button_heart.png");
+    border: 1px solid #117a40;
+    background-size: 22px auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+
+}
+
+section > #textbox > .button-box > .button-add-cart {
+    background: url("../img/button_bag.png");
+    border: 1px solid #117a40;
+    background-size: 22px auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.button-add-cart,
+section > #textbox > .button-box > .button-add-wish {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    padding: 0 10px;
+    color: #f8b61c;
+    text-align: center;
+    border-radius: 100%;
+    float: left;
+}
+
+section > #textbox > .button-box > .button-purchase {
+    display: inline-block;
+    float: left;
+    width: 350px;
+    height: 70px;
+    margin: 5px;
+    padding: 0 10px;
+    color: #ffffff;
+    font-size: 20px;
+    border: 1px solid #f8b61c;
+    background: #f8b61c;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 35px;
+}
+/*menu start*/
+.menu {
+    height: 65px;
+    width: 1230px;
+    margin: 0 auto;
+}
+
+.menu > ul > li > a {
+    color: black;
+}
+.menu > ul {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    height: 65px;
+}
+
+.menu > ul > li a {
+    float: left;
+    margin: 20px 110px 0;
+    color: #111;
+    font-weight: 600;
+    border: 0;
+}
+/*product start*/
+
+#product {
+    width: 1230px;
+    height: 12100px;
+    /* background-color: aquamarine; */
+    margin: 0 auto;
+}
+#product > h3 {
+    display: inline-block;
+    padding: 50px 0 0;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#product > img {
+    margin: 45px 145px 0;
+}
+
+/*admin page start*/
+
+#admin-wrap {
+    width: 1230px;
+    height: 1630px;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+.admin-msg {
+
+    min-height: 100px;
+    font-size: 15px;
+    line-height: 28px;
+    color: #888;
+    font-weight: 500;
+
+}
+
+.admin-msg > h3 {
+
+    padding: 45px 0 20px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+}
+
+.admin-msg > p {
+
+    margin-bottom: 3px;
+}

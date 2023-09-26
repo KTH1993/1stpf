@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+        <title>test1</title>
+        <link href="css/common.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/reset.css" rel="stylesheet">
+
+    </head>
+
+    <script>
+    function slide(){
+			$('#slider-image-wrap').animate({marginLeft:-1920},1000,function(){
+				$('#slider-image-wrap li:first').appendTo('#slider-image-wrap');
+				$('#slider-image-wrap').css({marginLeft:0});
+			})
+            
+		}
+		setInterval(slide, 3000)
+    
+
+    $()
+    </script>
+
+    <body>
+        <div id="slider">
+            <ul id="slider-image-wrap">
+                <li><img src="img/slide1.jpg" alt="slider" class="image"></li>
+                <li><img src="img/slide2.jpg" alt="slider" class="image"></li>
+                <li><img src="img/slide3.jpg" alt="slider" class="image"></li>
+                <li><img src="img/slide4.jpg" alt="slider" class="image"></li>
+            </ul>
+        </div>
+
+    </body>
+</html>

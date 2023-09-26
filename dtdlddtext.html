@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <dl class="item_delivery">
+        <dt>배송비</dt>
+        <dd>
+            <strong>3,000원</strong>
+            <input type="hidden" name="deliveryCollectFl" value="pre" />
+            <strong> / 주문시결제(선결제)</strong>
+            <span class="btn_layer">
+                <span class="btn_gray_list"><a href="#lyDelivery" class="btn_gray_small"><em>조건별배송</em></a></span>
+                <div id="lyDelivery" class="layer_area" style="display:none;">
+                    <div class="ly_wrap delivery_layer">
+                        <div class="ly_tit">금액별배송비</div>
+                        <div class="ly_cont">
+                            <div class="delivery_list">
+                                <ul>
+                                    <li>
+                                        0원 이상 ~ 20,000원 미만
+                                        <span>
+                                            3,000원
+                                        </span>
+                                    </li>
+                                    <li>
+                                        20,000원 이상
+                                        <span>
+                                            0원
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="chk_none">
+                                배송비 계산 기준 : 판매가
+                                + 옵션가
+                                + 추가상품가
+                                + 텍스트옵션가
+                                - 상품할인가
+                                - 상품쿠폰할인가
+                            </p>
+                        </div>
+                        <!-- //ly_cont -->
+                        <a href="#close" class="ly_close"><img src="https://cdn-pro-web-241-106.cdn-nhncommerce.com/radixg2022_godomall_com/data/skin/front/mo_designart/img/common/layer/btn_layer_close.png" alt="닫기"></a>
+                    </div>
+                </div>
+            </span>
+            <div class="delivery-detail">
+                <input type="hidden" name="deliveryMethodFl" value="delivery" />
+                <div class="delivery-division">택배</div>
+
+
+                <div class="js-deliveryMethodVisitArea dn">
+                    방문 수령지 : 서울특별시 마포구 마포대로 86 (창강빌딩) 8층
+                </div>
+            </div>
+        </dd>
+    </dl>
+</body>
+</html>
